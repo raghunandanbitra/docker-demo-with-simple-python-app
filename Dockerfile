@@ -7,4 +7,4 @@ COPY . /usr/src/app
 ENV PORT 8080
 EXPOSE $PORT
 VOLUME [ "/app-data" ]
-CMD gunicorn -b :$PORT -c gunicor.conf.py main:app
+CMD gunicorn -b :$PORT -c gunicorn.conf.py main:app
